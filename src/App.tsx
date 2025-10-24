@@ -1,75 +1,233 @@
-import { ArrowRight, Clock, Gift, Heart, Mail, MapPin, Phone, Smile, Sparkles, Star } from "lucide-react"
-import { useState } from "react"
+import {
+  ArrowRight,
+  Clock,
+  Gift,
+  Heart,
+  MapPin,
+  Phone,
+  Smile,
+  Sparkles,
+  Star,
+} from "lucide-react";
+import nuevologo from "./img/nuevologo.png";
+import sonicImg from "./img/zonic.png";
+import rojoImg from "./img/sonicRojo.png"
+import negroImg from "./img/sonicNegro.png"
+import amarilloImg from "./img/sonicAmarillo.png"
+import rosadoImg from "./img/sonicRosado.png"
+import mario from "./img/marioBros.png"
+import luigiImg from "./img/luigi.png";
+import ranaImg from "./img/ranaRene.png";
+import plimImg from "./img/plim_plim.png";
+import garraImg from "./img/garra.png";
+import alexImg from "./img/alex.png";
+import alegriaImg from "./img/alegria.png";
+import mikyImg from "./img/miky.png";
+import OSITAImg from "./img/osita.png";
+import mariachiImg from "./img/mariachi.png";
+import stichImg from "./img/stich.png";
+import angelaImg from "./img/angela.png";
+import kityImg from "./img/kity.png";
+import bluyImg from "./img/bluy.png";
+import capibaraImg from "./img/capibara.png";
+import abejitaImg from "./img/abejita.png";
+import llamaImg from "./img/llama.png";
+import tigerImg from "./img/tigger.png";
+import capuchinoImg from "./img/asesino.png";
+import capuchinaImg from "./img/capuchina.png";
+import tuntunImg from "./img/tuntun.png";
+import tralaleroImg from "./img/tralalero.png";
+import furiaImg from "./img/furia.png";
+import { useState } from "react";
 
 function App() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
-  console.log(hoveredCard)
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  console.log(hoveredCard);
 
   const PRODUCTS = [
-  {
-    id: 1,
-    name: "Capibara",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xt9uiwUozRRTKUpmx1jCbfrCGDVDAq.png",
-  },
-  {
-    id: 2,
-    name: "Luigi",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qGfdS2iVb9vIu2QzH9Q3jdf4YB43wa.png",
-  },
-  {
-    id: 3,
-    name: "Asesino Capuchino",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jutrmZf61yFmEdq7t1rqgeZLkFCfyY.png",
-  },
-  {
-    id: 4,
-    name: "Ballerina Capuchina",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YH1X3lEcc1xIazTKNiPjP1UJIlACOx.png",
-  },
-  {
-    id: 5,
-    name: "Llama",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EzhLD1TcWQPEPccMjQAWg72RaqiBPk.png",
-  },
-  {
-    id: 6,
-    name: "Tralelo Tralala",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-keC7GpLFPaFlzqIVjroWXJ99Twehhr.png",
-  },
-  {
-    id: 7,
-    name: "Bluey",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4Yrt51JrLXXjtDpjF16IWbqQjM2lQV.png",
-  },
-  {
-    id: 8,
-    name: "Plim Plim",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fZ60nkRIk8dmnDds0qCRtT051KGQ0s.png",
-  },
-  {
-    id: 9,
-    name: "Rana René",
-    price: "50",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bakRMQmq663hw7UDzQLK2JWHjTk7dG.png",
-  },
-]
+    {
+      id: 1,
+      name: "Soníc Azul",
+      price: "50",
+      image: sonicImg,
+    },
+    {
+      id: 2,
+      name: "Soníc Rojo",
+      price: "50",
+      image: rojoImg,
+    },
+    {
+      id: 3,
+      name: "Soníc Negro",
+      price: "50",
+      image: negroImg,
+    },
+    {
+      id: 4,
+      name: "Soníc Amarillo",
+      price: "50",
+      image: amarilloImg,
+    },
+    {
+      id: 5,
+      name: "Soníc Rosado",
+      price: "50",
+      image: rosadoImg,
+    },
+    {
+      id: 6,
+      name: "Mario Bros",
+      price: "50",
+      image: mario,
+    },
+     {
+      id: 7,
+      name: "Luigi",
+      price: "50",
+      image:luigiImg,
+    },
+     {
+      id: 8,
+      name: "Rana Rene",
+      price: "55",
+      image:ranaImg,
+    },
+     {
+      id: 9,
+      name: "Plim Plim",
+      price: "50",
+      image:plimImg,
+    },
+     {
+      id: 10,
+      name: "Garra Crema",
+      price: "55",
+      image:garraImg,
+    },
+     {
+      id: 11,
+      name: "León Alex",
+      price: "55",
+      image:alexImg,
+    },
+     {
+      id: 12,
+      name: "Alegria",
+      price: "55",
+      image:alegriaImg,
+    },
+     {
+      id: 13,
+      name: "Myckey Americano",
+      price: "50",
+      image:mikyImg,
+    },
+     {
+      id: 14,
+      name: "Osita",
+      price: "55",
+      image:OSITAImg,
+    },
+     {
+      id: 15,
+      name: "Osito Mariachi",
+      price: "55",
+      image:mariachiImg,
+    },
+     {
+      id: 16,
+      name: "Stich",
+      price: "55",
+      image:stichImg,
+    },
+     {
+      id: 16,
+      name: "Angela",
+      price: "55",
+      image:angelaImg,
+    },
+     {
+      id: 17,
+      name: "Hello Kitty",
+      price: "60",
+      image:kityImg,
+    },
+     {
+      id: 18,
+      name: "Bluey",
+      price: "60",
+      image:bluyImg,
+    },
+    {
+      id: 19,
+      name: "Capibara",
+      price: "60",
+      image:capibaraImg,
+    },
+    {
+      id: 20,
+      name: "Abejita",
+      price: "60",
+      image:abejitaImg,
+    },
+    {
+      id: 21,
+      name: "Llama",
+      price: "60",
+      image:llamaImg,
+    },
+    {
+      id: 22,
+      name: "Tiger",
+      price: "55",
+      image:tigerImg,
+    },
+    {
+      id: 23,
+      name: "Ballerina Capuchina",
+      price: "75",
+      image:capuchinaImg,
+    },
+   
+    {
+      id: 24,
+      name: "Asesino Capuchino",
+      price: "75",
+      image:capuchinoImg,
+    },
+    {
+      id: 25,
+      name: "Tun Tun Sahur",
+      price: "75",
+      image:tuntunImg,
+    },
+    {
+      id: 26,
+      name: "Tralelo tralala",
+      price: "75",
+      image:tralaleroImg,
+    },
+    {
+      id: 27,
+      name: "Furia",
+      price: "55",
+      image:furiaImg,
+    },
+    
+    
+  ];
 
-const WHATSAPP_NUMBER = "51994023629"
+  const WHATSAPP_NUMBER = "51994023629";
 
-const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
-  const message = `Hola! Me interesa alquilar el disfraz de *${product.name}*\n\nPrecio: S/ ${product.price} por día\n\n¿Cuál es la disponibilidad?`
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
-}
+  const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
+    const message = `Hola! Me interesa alquilar el disfraz de *${product.name}*\n\nPrecio: S/ ${product.price} por día\n\n¿Cuál es la disponibilidad?`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+      message
+    )}`;
+  };
   return (
-   <div className="min-h-screen bg-white font-comic">
+    <div className="min-h-screen bg-white font-comic">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white shadow-xl border-b-4 border-[#E74C3C]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -81,10 +239,16 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
             />
           </div>
           <div className="hidden md:flex gap-8 items-center">
-            <a href="#inicio" className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors">
+            <a
+              href="#inicio"
+              className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors"
+            >
               Inicio
             </a>
-            <a href="#catalogo" className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors">
+            <a
+              href="#catalogo"
+              className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors"
+            >
               Catálogo
             </a>
             <a
@@ -93,12 +257,17 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
             >
               ¿Cómo funciona?
             </a>
-            <a href="#contacto" className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors">
+            <a
+              href="#contacto"
+              className="text-[#001F5C] hover:text-[#E74C3C] font-bold text-lg transition-colors"
+            >
               Contacto
             </a>
           </div>
-          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola!%20Me%20interesa%20alquilar%20un%20disfraz`}>
-            <button className="bg-[#E74C3C] hover:bg-[#D63C2D] text-white rounded-full px-8 font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105">
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola!%20Me%20interesa%20alquilar%20un%20disfraz`}
+          >
+            <button className="bg-[#E74C3C] hover:bg-[#D63C2D] text-white rounded-full px-8 font-bold text-lg shadow-lg hover:shadow-xl py-2 transition-all hover:scale-105">
               Alquilar
             </button>
           </a>
@@ -120,9 +289,12 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
             <div className="inline-block bg-[#E74C3C]/20 border border-[#E74C3C] text-[#E74C3C] px-6 py-2 rounded-full font-bold mb-6 text-lg">
               ✨ Diversión Garantizada
             </div>
-            <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight text-balance">Haz Magia en tu Evento</h1>
+            <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight text-balance">
+              Haz Magia en tu Evento
+            </h1>
             <p className="text-2xl text-blue-100 mb-8 leading-relaxed font-semibold">
-              Disfraces de personajes que transforman momentos ordinarios en recuerdos extraordinarios.
+              Disfraces de personajes que transforman momentos ordinarios en
+              recuerdos extraordinarios.
             </p>
             <div className="flex gap-4 flex-wrap">
               <a href="#catalogo">
@@ -131,10 +303,8 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
                 </button>
               </a>
               <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="">
-                <button
-                  className="w-fit cursor-pointer flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-bold bg-transparent transition-all hover:scale-110"
-                >
-                  <Phone className="w-5 h-5 mr-2" /> 
+                <button className="w-fit cursor-pointer flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-bold bg-transparent transition-all hover:scale-110">
+                  <Phone className="w-5 h-5 mr-2" />
                   <span>Contactar</span>
                 </button>
               </a>
@@ -143,7 +313,7 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
           <div className="relative animate-float">
             <div className="bg-gradient-to-br from-[#E74C3C]/30 to-[#001F5C]/30 backdrop-blur-xl rounded-3xl p-8 border-2 border-white/20 shadow-2xl">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RryvXQpMJQc61pmXjmMY3ANcfDgUAL.png"
+                src={nuevologo}
                 alt="Disfraces de personajes"
                 className="w-full rounded-2xl shadow-xl"
               />
@@ -153,19 +323,46 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
       </section>
 
       {/* How It Works */}
-      <section id="como-funciona" className="py-24 px-4 bg-gradient-to-b from-white to-blue-50">
+      <section
+        id="como-funciona"
+        className="py-24 px-4 bg-gradient-to-b from-white to-blue-50"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-[#001F5C] mb-4">¿Cómo Funciona?</h2>
-            <p className="text-2xl text-gray-600 font-bold">Cuatro pasos simples hacia la diversión</p>
+            <h2 className="text-5xl md:text-6xl font-black text-[#001F5C] mb-4">
+              ¿Cómo Funciona?
+            </h2>
+            <p className="text-2xl text-gray-600 font-bold">
+              Cuatro pasos simples hacia la diversión
+            </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: Sparkles, num: "1", title: "Explora", desc: "Descubre nuestros disfraces" },
-              { icon: Gift, num: "2", title: "Elige", desc: "Selecciona tu favorito" },
-              { icon: Clock, num: "3", title: "Reserva", desc: "Confirma tu fecha" },
-              { icon: Heart, num: "4", title: "Disfruta", desc: "¡A divertirse!" },
+              {
+                icon: Sparkles,
+                num: "1",
+                title: "Explora",
+                desc: "Descubre nuestros disfraces",
+              },
+              {
+                icon: Gift,
+                num: "2",
+                title: "Elige",
+                desc: "Selecciona tu favorito",
+              },
+              {
+                icon: Clock,
+                num: "3",
+                title: "Reserva",
+                desc: "Confirma tu fecha",
+              },
+              {
+                icon: Heart,
+                num: "4",
+                title: "Disfruta",
+                desc: "¡A divertirse!",
+              },
             ].map((step, idx) => (
               <div key={idx} className="relative group">
                 {idx < 3 && (
@@ -175,8 +372,12 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
                   <div className="w-20 h-20 bg-gradient-to-br from-[#E74C3C] to-[#D63C2D] rounded-2xl flex items-center justify-center text-white mb-6 mx-auto group-hover:scale-110 transition-transform">
                     <step.icon className="w-10 h-10" />
                   </div>
-                  <h3 className="text-2xl font-black text-[#001F5C] text-center mb-3">{step.title}</h3>
-                  <p className="text-gray-600 text-center font-semibold leading-relaxed">{step.desc}</p>
+                  <h3 className="text-2xl font-black text-[#001F5C] text-center mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-center font-semibold leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -188,49 +389,58 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
       <section id="catalogo" className="py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-6xl md:text-7xl font-black text-[#001F5C] mb-4">Nuestro Catálogo</h2>
-            <p className="text-2xl text-gray-600 font-bold">Elige tu personaje favorito</p>
+            <h2 className="text-6xl md:text-7xl font-black text-[#001F5C] mb-4">
+              Nuestro Catálogo
+            </h2>
+            <p className="text-2xl text-gray-600 font-bold">
+              Elige tu personaje favorito
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid  md:grid-cols-3 gap-8">
             {PRODUCTS.map((product, idx) => (
               <a
                 key={product.id}
                 href={generateWhatsAppMessage(product)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="block "
               >
                 <div
-                  className="bg-white border-2 border-gray-200 shadow-xl hover:shadow-2xl hover:-translate-y-6 transition-all duration-300 overflow-hidden rounded-3xl group cursor-pointer h-full flex flex-col hover:border-[#E74C3C]"
+                  className="bg-white border-2 border-gray-200 shadow-xl hover:shadow-2xl hover:-translate-y-6 transition-all duration-300  overflow-hidden rounded-3xl group cursor-pointer h-full flex flex-col hover:border-[#E74C3C]"
                   onMouseEnter={() => setHoveredCard(product.id)}
                   onMouseLeave={() => setHoveredCard(null)}
                   style={{
                     animation: `slideUp 0.6s ease-out ${idx * 60}ms both`,
                   }}
                 >
-                  <div className="relative overflow-hidden bg-gradient-to-br from-[#001F5C]/5 via-[#E74C3C]/5 to-blue-50 h-80 flex-shrink-0 flex items-center justify-center">
-                    <img
+                  <div className="relative overflow-hidden bg-gradient-to-br from-[#001F5C]/5 via-[#E74C3C]/5 to-blue-50 h-80 flex-shrink-0 h-[25rem] flex items-center justify-center">
+                  <img
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
-                      className="w-full h-full object-cover object-center group-hover:scale-125 transition-transform duration-500 ease-out"
+                      className="w-full h-full object-cover object-center  group-hover:scale-125 transition-transform duration-500 ease-out"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-8">
-                                          </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-8"></div>
                   </div>
 
                   <div className="p-8 flex-grow flex flex-col justify-between">
                     <div>
-                      <h3 className="text-2xl font-black text-[#001F5C] mb-2 group-hover:text-[#E74C3C] transition-colors">
+                      {/* <h3 className="text-2xl font-black text-[#001F5C] mb-2 group-hover:text-[#E74C3C] transition-colors">
                         {product.name}
-                      </h3>
-                      <p className="text-gray-600 text-sm font-semibold">Disfraz premium para eventos</p>
+                      </h3> */}
+                      <p className="text-gray-600 text-sm font-semibold">
+                        Disfraz premium para eventos
+                      </p>
                     </div>
 
                     <div className="space-y-4 mt-6">
                       <div className="flex items-baseline gap-2 bg-gradient-to-r from-[#E74C3C]/15 to-[#D63C2D]/15 p-4 rounded-2xl border-2 border-[#E74C3C]/30">
-                        <span className="text-4xl font-black text-[#E74C3C]">S/ {product.price}</span>
-                        <span className="text-gray-600 text-sm font-bold">por día</span>
+                        <span className="text-4xl font-black text-[#E74C3C]">
+                          S/ {product.price}
+                        </span>
+                        <span className="text-gray-600 text-sm font-bold">
+                          por día
+                        </span>
                       </div>
                       <button className="w-full cursor-pointer bg-gradient-to-r from-[#E74C3C] to-[#D63C2D] hover:from-[#D63C2D] hover:to-[#C02D1D] text-white rounded-full font-black py-3 text-base shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                         Alquilar Ahora
@@ -248,8 +458,12 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
       <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-[#001F5C] mb-4">Lo Que Dicen Nuestros Clientes</h2>
-            <p className="text-2xl text-gray-600 font-bold">Miles de eventos felices en Lima</p>
+            <h2 className="text-5xl md:text-6xl font-black text-[#001F5C] mb-4">
+              Lo Que Dicen Nuestros Clientes
+            </h2>
+            <p className="text-2xl text-gray-600 font-bold">
+              Miles de eventos felices en Lima
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -276,13 +490,22 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic font-semibold leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-6 italic font-semibold leading-relaxed">
+                  "{testimonial.text}"
+                </p>
                 <div>
-                  <p className="font-black text-[#001F5C]">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600 font-semibold">{testimonial.role}</p>
+                  <p className="font-black text-[#001F5C]">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-gray-600 font-semibold">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             ))}
@@ -299,19 +522,24 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#E74C3C] rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-black mb-6">¿Listo para la Diversión?</h2>
-          <p className="text-2xl text-blue-100 mb-10 font-bold">Contacta con nosotros y reserva tu disfraz hoy</p>
+          <h2 className="text-5xl md:text-6xl font-black mb-6">
+            ¿Listo para la Diversión?
+          </h2>
+          <p className="text-2xl text-blue-100 mb-10 font-bold">
+            Contacta con nosotros y reserva tu disfraz hoy
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola!%20Me%20interesa%20alquilar%20un%20disfraz`}>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola!%20Me%20interesa%20alquilar%20un%20disfraz`}
+            >
               <button className="bg-[#E74C3C] hover:bg-[#D63C2D] text-white rounded-full px-10 py-6 text-lg font-black transition-all hover:scale-110 shadow-lg hover:shadow-xl flex items-center gap-2">
                 <Smile className="w-6 h-6" /> Alquilar Ahora
               </button>
             </a>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}`}>
-              <button
-                className="border-2 border-white text-white hover:bg-white/10 rounded-full px-10 py-6 text-lg font-black bg-transparent transition-all hover:scale-110"
-              >
-                <Phone className="w-6 h-6 mr-2" /> +51 994 023 629
+              <button className="border-2 border-white flex items-center gap-2 text-white hover:bg-white/10 rounded-full px-10 py-6 text-lg font-black bg-transparent transition-all hover:scale-110">
+                <Phone className="w-6 h-6 mr-2" /> 
+                <span>+51 994 023 629</span>
               </button>
             </a>
           </div>
@@ -325,24 +553,34 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
             <div>
               <h3 className="text-2xl font-black mb-4">MUNEFEST</h3>
               <p className="text-blue-100 font-semibold leading-relaxed">
-                Alquiler de disfraces y muñecos para eventos inolvidables en Lima.
+                Alquiler de disfraces y muñecos para eventos inolvidables en
+                Lima.
               </p>
             </div>
             <div>
               <h4 className="font-black mb-4 text-lg">Enlaces</h4>
               <ul className="space-y-3 text-blue-100 font-semibold">
                 <li>
-                  <a href="#inicio" className="hover:text-[#E74C3C] transition-colors">
+                  <a
+                    href="#inicio"
+                    className="hover:text-[#E74C3C] transition-colors"
+                  >
                     Inicio
                   </a>
                 </li>
                 <li>
-                  <a href="#catalogo" className="hover:text-[#E74C3C] transition-colors">
+                  <a
+                    href="#catalogo"
+                    className="hover:text-[#E74C3C] transition-colors"
+                  >
                     Catálogo
                   </a>
                 </li>
                 <li>
-                  <a href="#como-funciona" className="hover:text-[#E74C3C] transition-colors">
+                  <a
+                    href="#como-funciona"
+                    className="hover:text-[#E74C3C] transition-colors"
+                  >
                     ¿Cómo funciona?
                   </a>
                 </li>
@@ -354,16 +592,16 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
                 <li className="flex items-center gap-2">
                   <Phone className="w-5 h-5" /> +51 994 023 629
                 </li>
-                <li className="flex items-center gap-2">
+                {/* <li className="flex items-center gap-2">
                   <Mail className="w-5 h-5" /> info@munefest.com
-                </li>
+                </li> */}
                 <li className="flex items-center gap-2">
                   <MapPin className="w-5 h-5" /> Lima, Perú
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-black mb-4 text-lg">Síguenos</h4>
+              {/* <h4 className="font-black mb-4 text-lg">Síguenos</h4>
               <div className="flex gap-4">
                 <a
                   href="#"
@@ -383,7 +621,7 @@ const generateWhatsAppMessage = (product: (typeof PRODUCTS)[0]) => {
                 >
                   𝕏
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-blue-100 font-semibold">
